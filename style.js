@@ -20,5 +20,12 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
+generateBtn.addEventListener("click", writePassword);
+function generatePassword() {
+  passwordLength = prompt("How many characters would you like your password? Choose between 8 and 128");
+  console.log("Password length " + passwordLength);
+  
+  if(!passwordLength) {
+    alert("Required value");
+    } 
